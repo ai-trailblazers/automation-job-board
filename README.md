@@ -277,3 +277,7 @@ The app uses a **Midnight Blue (#1e3a5f)** and **Electric Teal (#00d9c0)** color
 ## License
 
 MIT
+
+## Credits and attribution
+
+This project is a fork of [Ctrl-Hire/automation-job-board](https://github.com/Ctrl-Hire/automation-job-board), created by [Jake Kazi](https://github.com/jakekazi) with contributions from [Michael Martinez](https://github.com/MichaelMartinez) and [Edwin Renck](https://github.com/edrenck). Used and modified under the [MIT License](LICENSE). The original copyright notice remains in [LICENSE](LICENSE).
