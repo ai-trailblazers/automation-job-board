@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useAuth } from '@/lib/auth';
 import { useMyJobs } from '@/hooks/useJobs';
 import { useMyApplications, useJobApplications } from '@/hooks/useApplications';
 import { jobsApi, applicationsApi, aiApi } from '@/lib/api';
-import { formatDate, formatBudget } from '@/lib/utils';
+import { formatDate } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -13,7 +13,6 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 
 function SponsorDashboard() {
-  const navigate = useNavigate();
   const { jobs, isLoading, refetch } = useMyJobs();
   const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
   const { applications, refetch: refetchApps } = useJobApplications(selectedJobId || undefined);
